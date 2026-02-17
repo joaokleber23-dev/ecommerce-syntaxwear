@@ -1,0 +1,101 @@
+/* Reset CSS - Andy Bell's Modern CSS Reset */
+
+/* Remove default margins, padding, and borders */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Set box-sizing to border-box for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default list styles */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Make images and pictures responsive */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Improve typography */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Remove default input styles */
+input,
+button,
+textarea,
+select {
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+/* Remove default button styles */
+button {
+  cursor: pointer;
+}
+
+/* Improve body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove animation for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Remove focus outline for mouse users */
+*:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+/* Default form element styles */
+textarea {
+  resize: vertical;
+}
+
+/* Remove default hr styles */
+hr {
+  border: none;
+  border-top: 1px solid currentColor;
+  color: inherit;
+  overflow: visible;
+  height: 0;
+}
