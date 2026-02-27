@@ -1,0 +1,65 @@
+/* ==========================================
+   VARIÁVEIS CSS - Cores, Fontes e Espaçamentos
+   ========================================== */
+
+/* Importar Fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+:root {
+    /* Cores Primárias */
+    --cor-primaria: #7c3aed; /* roxo do menu */
+    --cor-primaria-escuro: #5b21a8; /* hover/variante */
+    --cor-secundaria: #FFFFFF;
+    
+    /* Cores de Texto */
+    --cor-texto: #5b21a8;
+    --cor-texto-claro: #666666;
+    --cor-texto-branco: #FFFFFF;
+    
+    /* Cores de Fundo */
+    --cor-fundo: #FFFFFF;
+    --cor-fundo-escuro: #121212;
+    --cor-fundo-cinza: #F5F5F5;
+    
+    /* Cores de Destaque */
+    --cor-sucesso: #28A745;
+    --cor-alerta: #FFC107;
+    --cor-erro: #DC3545;
+    
+    /* Fontes */
+    --fonte-principal: 'Inconsolata', monospace;
+    --fonte-secundaria: 'Courier New', monospace;
+    
+    /* Tamanhos de Fonte */
+    --tamanho-h1: 2.5rem;
+    --tamanho-h2: 2rem;
+    --tamanho-h3: 1.75rem;
+    --tamanho-h4: 1.5rem;
+    --tamanho-h5: 1.25rem;
+    --tamanho-h6: 1rem;
+    --tamanho-body: 1rem;
+    --tamanho-small: 0.875rem;
+    
+    /* Espaçamentos */
+    --espaco-xs: 0.25rem;
+    --espaco-sm: 0.5rem;
+    --espaco-md: 1rem;
+    --espaco-lg: 1.5rem;
+    --espaco-xl: 2rem;
+    --espaco-xxl: 3rem;
+    
+    /* Sombras */
+    --sombra-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --sombra-md: 0 4px 6px rgba(0, 0, 0, 0.15);
+    --sombra-lg: 0 10px 20px rgba(0, 0, 0, 0.2);
+    
+    /* Bordas */
+    --borda-radius-sm: 0.25rem;
+    --borda-radius-md: 0.5rem;
+    --borda-radius-lg: 1rem;
+    
+    /* Transições */
+    --transicao-rapida: 150ms ease-in-out;
+    --transicao-media: 300ms ease-in-out;
+    --transicao-lenta: 500ms ease-in-out;
+}

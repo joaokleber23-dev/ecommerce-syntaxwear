@@ -1,22 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br"> <head>
+<html lang="pt-br">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <met name="description"
+        content="Krypton One,compre os melhores tenis e sneakers online na syntaxwear. encontre modelos exclusivos,ofertas imperdiveis e frete gratis para todo o brasil.!" />
     <title>Krypton One - Presença em cada passo</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Base Styles -->
+    <link rel="stylesheet" href="src/css/base/variables.css">
+    <link rel="stylesheet" href="src/css/base/reset.css">
+    <link rel="stylesheet" href="src/css/base/base.css">
+    <link rel="stylesheet" href="src/css/base/typography.css">
+    <link rel="stylesheet" href="src/css/base/global.css">
+
+    <!-- Components -->
+    <link rel="stylesheet" href="src/css/components/buttons.css">
+    <link rel="stylesheet" href="src/css/components/cards.css">
+    <link rel="stylesheet" href="src/css/components/container.css">
+    <link rel="stylesheet" href="src/css/layout/product-category.css">
+
+    <!-- Layout -->
     <link rel="stylesheet" href="src/css/layout/header.css">
+    <link rel="stylesheet" href="src/css/layout/hero.css">
+    <link rel="stylesheet" href="src/css/layout/destaque.css">
+    <link rel="stylesheet" href="src/css/layout/footer.css">
+    <link rel="stylesheet" href="src/css/layout/products-grid.css">
+
+    <!-- Pages -->
+    <link rel="stylesheet" href="src/css/pages/home.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" href="src/css/responsive.css">
+
 </head>
+
 <body>
 
     <header class="menu">
         <nav class="navbar">
-            <div class="navbar-left">
-                <ul>
-                    <li><a href="#">Nossas lojas</a></li>
-                    <li><a href="#">Sobre</a></li>
-                </ul>
+            <div class="navbar-logo">
+                <a href="#" class="logo">
+                    <img src="./src/assets/images/logo/Logo.svg" alt="Krypton One" />
+                </a>
             </div>
-            
+
             <div class="navbar-center">
                 <ul>
                     <li><a href="#">Masculino</a></li>
@@ -27,25 +57,17 @@
 
             <div class="navbar-right">
                 <ul>
-                    <li><a href="#" class="icon-user" title="Minha conta">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                    </a></li>
-                    <li><a href="#" class="icon-notifications" title="Notificações">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
-                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-                        </svg>
-                    </a></li>
-                    <li><a href="#" class="icon-cart" title="Carrinho">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="9" cy="21" r="1"></circle>
-                            <circle cx="20" cy="21" r="1"></circle>
-                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                        </svg>
-                    </a></li>
+                    <li><a href="#">Nossas lojas</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#" class="icon-user">
+                            <img src="./src/assets/images/icons/ícone.svg" alt="Usuário" />
+                        </a></li>
+                    <li><a href="#" class="icon-help">
+                            <img src="./src/assets/images/icons/Vector (1).svg" alt="Ajuda" />
+                        </a></li>
+                    <li><a href="#" class="icon-cart">
+                            <img src="./src/assets/images/icons/ícone (1).svg" alt="Carrinho" />
+                        </a></li>
                 </ul>
             </div>
         </nav>
@@ -53,33 +75,46 @@
 
     <main>
         <section class="hero">
-            <h1>Krypton one</h1>
-            <h2>Transforme qualquer passo em presença</h2>
-            <div class="botoes">
-                <button>Ver Modelos</button>
-                <button>Comprar</button>
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Krypton One</span>
+                    <h2 class="hero-title">Transforme qualquer passo em presença</h2>
+                    <div class="hero-buttons">
+                        <a class="btn btn-outline" href="#">Ver Modelos</a>
+                        <a class="btn btn-filled" href="#">Comprar</a>
+                    </div>
+                </div>
             </div>
+
         </section>
 
-        <section class="vitrine">
-            <div class="tenis branco">
-                <h3>Um tênis ideal para o seu dia a dia.</h3>
-                <button>Casual</button>
+        <section class="categories-section">
+            <div class="category-card casual">
+                <a href="#" class="category-link">
+                    <span class="overlay"></span>
+                    <span class="category-name  btn btn-outline">casual</span>
+                </a>
             </div>
 
-            <div class="tenis preto">
-                <h3>Ideal para o dia a dia e prática de esportes.</h3>
-                <button>Esporte</button>
+            <div class="category-card esporte">
+                <a href="#">
+                    <span class="overlay"></span>
+                    <span class="category-name  btn btn-outline">esporte</span>
+                </a>
             </div>
-            </section>
+            <div class="category-card colorido">
+                <a href="#">
+                    <span class="overlay"></span>
+                    <span class="category-name  btn btn-outline">colorido</span>
+                </a>
+            </div>
+            <div class="category-card futurista">
+                <a href="#">
+                    <span class="overlay"></span>
+                    <span class="category-name  btn btn-outline">futurista</span>
+                </a>
+            </div>
 
-        <section class="galeria">
-            <p>Krypton One</p>
-            <h1>Estilo Urbano com Atitude</h1>
-            <div class="fotos">
-                <img src="foto1.jpg" alt="Tênis Krypton em ambiente urbano">
-                <img src="foto2.jpg" alt="Detalhe do solado">
-                </div>
         </section>
     </main>
 
@@ -93,4 +128,5 @@
     </footer>
 
 </body>
+
 </html>

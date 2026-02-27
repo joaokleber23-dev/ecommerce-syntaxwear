@@ -1,0 +1,78 @@
+/* ==========================================
+   TYPOGRAPHY - Tipografia e Textos
+   ========================================== */
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: var(--espaco-md);
+}
+
+h1 {
+    font-size: var(--tamanho-h1);
+}
+
+h2 {
+    font-size: var(--tamanho-h2);
+}
+
+h3 {
+    font-size: var(--tamanho-h3);
+}
+
+h4 {
+    font-size: var(--tamanho-h4);
+}
+
+h5 {
+    font-size: var(--tamanho-h5);
+}
+
+h6 {
+    font-size: var(--tamanho-h6);
+}
+
+/* Parágrafos */
+p {
+    font-size: var(--tamanho-body);
+    margin-bottom: var(--espaco-md);
+    line-height: 1.6;
+}
+
+/* Small Text */
+small, .text-small {
+    font-size: var(--tamanho-small);
+}
+
+/* Bold */
+strong, b {
+    font-weight: 700;
+}
+
+/* Itálico */
+em, i {
+    font-style: italic;
+}
+
+/* Code */
+code, pre {
+    font-family: var(--fonte-secundaria);
+    background-color: var(--cor-fundo-cinza);
+    padding: var(--espaco-sm);
+    border-radius: var(--borda-radius-md);
+}
+
+pre {
+    padding: var(--espaco-md);
+    overflow-x: auto;
+}
+
+/* Blockquote */
+blockquote {
+    border-left: 4px solid var(--cor-primaria);
+    padding-left: var(--espaco-md);
+    margin-left: var(--espaco-md);
+    font-style: italic;
+    color: var(--cor-texto-claro);
+}
