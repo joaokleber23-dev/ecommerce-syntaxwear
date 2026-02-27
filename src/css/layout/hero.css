@@ -1,5 +1,6 @@
 .hero {
-    background-image: url(../../assets/images/banners/hero.jpng.jpg);
+    /* corrected image name - rename file to match if necessary */
+    background-image: url(../../assets/images/banners/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -10,6 +11,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 20px;
+
 }
 
 .hero-overlay{
