@@ -1,64 +1,15 @@
-.categories-section{
+.categories-section {
     padding-top: 40px;
     padding-bottom: 40px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;          /* keep cards side by side */
     justify-content: center;
+    align-items: center;        /* ensure each card lines up */
     gap: 30px;
-}
-.category-name{
-    font-size: 1.25rem;
-    margin-top: 10px;
-    text-align: center;
-    font-weight: 400;
-    color: #ffffff;
+    overflow-x: auto;           /* horizontal scroll on small viewports */
 }
 
-
-.category-card > a {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.category-card .overlay {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-}
-.category-name{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    text-align: center;
-}
-
-.category-card > a {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.category-card .overlay {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-}
-.category-card{
+.category-card {
     position: relative;
     width: 317px;
     height: 500px;
@@ -66,16 +17,24 @@
     overflow: hidden;
 }
 
-.overlay{
+.category-card > a {
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.25);
-    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    z-index: 2;
 }
 
-.category-card {
-    position: relative;
-    overflow: hidden;
+.category-card .overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
 }
 
 .category-card::after {
@@ -92,52 +51,38 @@
     opacity: 0.6;
 }
 
-.casual{
+.category-name {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+}
+
+.casual {
     background-image: url(../../assets/images/produtos/casual.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.esporte{
+.esporte {
     background-image: url(../../assets/images/produtos/esporte.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.colorido{
+.colorido {
     background-image: url(../../assets/images/produtos/colorido.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.futurista{
+.futurista {
     background-image: url(../../assets/images/produtos/futurista.jpg);
     background-size: cover;
     background-position: center;
-}
-.category-name{
-    font-size: 1.25rem;
-    margin-top: 10px;
-    text-align: center;
-    font-weight: 400;
-    color: #ffffff;
-}
-
-/* Make entire card clickable and show pointer */
-.category-card > a {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.category-card .overlay {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
 }
